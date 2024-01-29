@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GOOGLE FONTES -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- FIM GOOGLE FONTES -->
-    <!-- boostrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- FIM boostrap icons -->
-    <link rel="stylesheet" href="style.css">  
-    <title>SiteDm</title>
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>Site Dm</title>
 </head>
 <body>
     
@@ -20,16 +23,16 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="images/logo-dmarcos-2019.png" alt="Logo da empresa">
+                    <img src="images/logo-dmarcos-2019.png" alt="Logo da Agência BRN">
                 </a>
             </div><!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Especialidades</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Mídia</a></li>
-                    <li><a href="#">Acompanhar processo</a></li>
+                    <li><a href="#">Projetos</a></li>
                 </ul>
             </nav>
 
@@ -37,7 +40,29 @@
                 <a href="#">
                     <button>Contato</button>
                 </a>
-            </div><!--contato-->
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
     </header>
 
@@ -46,105 +71,123 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>HISTORIA DA DMARCOS <span>.</span></h1>
-                        <p>A postura de mercado da Dmarcos é o reflexo da postura de vida de seu presidente, João Marcos R. Corrêa. Natural de São Paulo e com base familiar em Manaus, João Marcos é um empreendedor nato, reconhecido pela atuação dinâmica, competente, agressiva na criação de soluções e presente na vida da empresa e dos clientes. Um parceiro que tem um diferencial decisivo: a capacidade de resolver. Desse espírito nasceu a Dmarcos.
-                            <p>Tudo começou em 1986, quando João Marcos criou sua própria empresa numa joint venture com a Deicmar de São Paulo e a Haniel da Alemanha, que logo alcançou destaque no mercado. Em 1990 o grupo Haniel transfere sua participação no Brasil para a multinacional Küene & Nagel e a razão social em Manaus muda para KN-Deicmar Marcos Despachos Aduaneiros Ltda. É um tempo de evolução para João Marcos.</p>
-                                <p>Até que em 1997 chega o momento da independência definitiva. A empresa assume a parte da KN-Deicmar, consolida a Dmarcos sob a razão social Marcos Despachos Aduaneiros Ltda e se torna referência no setor. É a era do empresário João Marcos e sua equipe mostrarem ao mercado um sucesso construído com atitude, garra, organização, dinamismo e pela satisfação permanente dos clientes, que têm certeza: na Dmarcos, tudo se resolve.</p>
-                            </p>
+                        <h1>Sobre nós<span>.</span></h1>
+                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.</p>
 
-                            <div class="btn-contato">
-                                <a href="#">
-                                    <button>Entrar em contato</button>
-                                </a>
-                            </div>
-                    </div><!-- txt topo do site-->
-                        
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
                     <div class="img-topo-site">
                         <img src="images/dmarcos-logo-gg.png" alt="">
-                    </div><!-- img-topo-site-->
-                </div><!-- flex -->
-            </div><!-- Interface --> 
-        </section><!-- Topo do site -->
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especiliadades">
             <div class="interface">
-                <h2 class="titulo">MINHAS <SPAN>ESPECIALIDADES</SPAN> </h2>
+                <h2 class="titulo">Nossas <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
                         <i class="bi bi-tools"></i>
-                        <h3>SERVIÇOS</h3>
-                        <p>Bem-vindo ao nosso universo online! Explore um espaço dedicado à inovação e inspiração. Descubra conteúdo cativante, recursos úteis e uma experiência envolvente. Navegue, conecte-se e faça parte da nossa comunidade. Seja bem-vindo ao coração digital do que amamos e compartilhamos.</p>
-                    </div> <!-- box -->
+                        <h3>Serviços</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+
                     <div class="especialidades-box">
-                        <i class="bi bi-buildings"></i>
-                        <h3>ESTRUTURA</h3>
-                        <p>Bem-vindo ao nosso universo online! Explore um espaço dedicado à inovação e inspiração. Descubra conteúdo cativante, recursos úteis e uma experiência envolvente. Navegue, conecte-se e faça parte da nossa comunidade. Seja bem-vindo ao coração digital do que amamos e compartilhamos.</p>
-                    </div> <!-- box -->
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>Estrutura</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+
                     <div class="especialidades-box">
                         <i class="bi bi-microsoft-teams"></i>
-                        <h3>EQUIPE</h3>
-                        <p>Bem-vindo ao nosso universo online! Explore um espaço dedicado à inovação e inspiração. Descubra conteúdo cativante, recursos úteis e uma experiência envolvente. Navegue, conecte-se e faça parte da nossa comunidade. Seja bem-vindo ao coração digital do que amamos e compartilhamos.</p>
-                    </div> <!-- box -->
-                </div> <!--flex-->
+                        <h3>Suporte</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
             </div><!--interface-->
-        </section><!-- Especialidades -->
+        </section><!--especiliadades-->
 
         <section class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
                         <img src="images/Dmarcosold.PNG" alt="">
-                    </div><!-- img sobre -->
-                
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER,<span>SOU DMARCOS</span></h2>
-                        <p>Bem-vindo ao nosso universo online! Explore um espaço dedicado à inovação e inspiração. Descubra conteúdo cativante, recursos úteis e uma experiência envolvente. Navegue, conecte-se e faça parte da nossa comunidade. Seja bem-vindo ao coração digital do que amamos e compartilhamos.</p>
-                        <P>Bem-vindo ao nosso universo online! Explore um espaço dedicado à inovação e inspiração. Descubra conteúdo cativante, recursos úteis e uma experiência envolvente. Navegue, conecte-se e faça parte da nossa comunidade. Seja bem-vindo ao coração digital do que amamos e compartilhamos.</P>
-                        <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-instagram"></button></i></a>
-                            <a href="#"><button><i class="bi bi-linkedin"></button></i></a>
-                            <a href="#"><button><i class="bi bi-envelope-at-fill"></button></i></a>
-                        </div><!-- btn-social -->
-                    </div><!-- txt sobre -->
-                </div>
-            </div>
-        </section><!-- Sobre -->
+                    </div><!--img-sobre-->
 
-        <section class="portifolio">
+                    <div class="txt-sobre">
+                        <h2>DMARCOS, <span>DESDE 1986.</span></h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At accusantium ducimus dicta suscipit, neque cumque sunt tenetur totam delectus magnam minus ratione. Quidem sequi velit voluptatibus eos omnis ullam officiis.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quidem quae iusto repellendus eaque, ipsum sed voluptate explicabo voluptas, dolorum porro sequi laudantium? Obcaecati quae, dolores illo officiis a numquam.</p>
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="portfolio">
             <div class="interface">
-                <h2 class="titulo">NOSSOS <SPAN>SERVIÇOS.</SPAN> </h2>
+                <h2 class="titulo">NOSSOS <span>SERVIÇOS.</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/port.jpg);">
+                    <div class="img-port" style="background-image: url(images/port.jpg)">
                         <div class="overlay">Importação</div>
                     </div>
+
                     <div class="img-port" style="background-image: url(images/port.jpg);">
                         <div class="overlay">Exportação</div>
                     </div>
+                    
                     <div class="img-port" style="background-image: url(images/port.jpg);">
                         <div class="overlay">Agenciamento</div>
                     </div>
+                    
                     <div class="img-port" style="background-image: url(images/port.jpg);">
                         <div class="overlay">Consultoria</div>
                     </div>
-                </div>
-            </div>
-        </section><!--portifolio-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
 
         <section class="formulario">
             <div class="interface">
-                <h2 class="titulo">FALE <SPAN>CONOSCO</SPAN></h2>
+                <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
 
-                <form method="post" action="envia.php">
-                    <input type="text" name="" id="" placeholder="Nome" name="nome" required>
-                    <input type="text" name="" id="" placeholder="Email" name="email" required>
-                    <input type="text" name="" id="" placeholder="Contato" name="contato">
-                    <textarea name="" id="" placeholder="Sua Mensagem" required></textarea>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
-            </div>
-        </section>
+            </div><!--interface-->
+        </section><!--formulario-->
 
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo-dmarcos-2019.png" alt="Logo dm">
+                    </div><!--logo-footer-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:sistemas@dmarcos.com.br">sistemas@dmarcos.com.br</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
 
 </body>
 </html>
