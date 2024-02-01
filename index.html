@@ -23,7 +23,7 @@
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="images/logo-dmarcos-2019.png" alt="Logo da Agência BRN">
+                    <img src="images/logo-dmarcos-2019.png" alt="Logo Dmarcos">
                 </a>
             </div><!--logo-->
 
@@ -161,11 +161,11 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form action="envia.php" method="post">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="contato" id="contato" placeholder="Seu celular:">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                 </form>
             </div><!--interface-->

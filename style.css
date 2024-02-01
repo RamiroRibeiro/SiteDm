@@ -168,6 +168,7 @@ section.portfolio-carousel {
 .btn-abrir-menu i {
     color: #ff9900;
     font-size: 40px;
+    display: none;
 }
 
 .menu-mobile {
@@ -475,6 +476,11 @@ footer .line-footer p a {
     /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
+    }
+    .btn-abrir-menu i {
+        color: #ff9900;
+        font-size: 40px;
+        display: block;
     }
 
     h2.titulo {
